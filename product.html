@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/add2be7059.js" crossorigin="anonymous"></script>
+
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid row">
+            <div class='col-md-2'>
+                <img src="data:image/png;base64,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"
+                    class="logo-brand" />
+            </div>
+            <div class='col-md-8'>
+                <form class="d-flex">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success " type="submit">Search</button>
+                </form>
+            </div>
+            <div class='col-md-2'>
+                <img class="logo-brand"
+                    src="">
+            </div>
+    </nav>
+
+    <div class="earphones">
+        <div id="wrap">
+            <div id="columns" class="columns_4">
+                <figure>
+                    <img class="imgSize" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone11-purple-2019?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1611169055000">
+                    <figcaption>Samsung Earphones</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://cdn.dxomark.com/wp-content/uploads/medias/post-30837/samsung_galaxy_a50-1024x768.jpg">
+                    <figcaption>Green and Black Flowers</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone11-purple-2019?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1611169055000">
+                    <figcaption>Black Dots</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://fdn2.mobgsm.com/vv/bigpic/huawei-honor-8x.jpg">
+                    <figcaption>Red Flowy</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://cdn.dxomark.com/wp-content/uploads/medias/post-30837/samsung_galaxy_a50-1024x768.jpg">
+                    <figcaption>Yellow Button-Up</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://fdn2.mobgsm.com/vv/bigpic/huawei-honor-8x.jpg">
+                    <figcaption>Put a Bird On It</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://i.imgur.com/SZmPJ7W.jpg">
+                    <figcaption>Polka Dots</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://i.imgur.com/OiEMgMx.jpg">
+                    <figcaption>Blue Spots</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+
+                <figure>
+                    <img class="imgSize" src="https://i.imgur.com/HolvggB.jpg">
+                    <figcaption>Pink Dots</figcaption>
+                    <span class="price">$44</span>
+                    <a class="button" href="#">Buy Now</a>
+                </figure>
+            </div>
+        </div>
+
+        <!-- footer section starts here-->
+        <footer class="bg-dark text-center text-white" style="margin-top: 60px;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- tiktok -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa-brands fa-tiktok"></i></a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="">atishgurung13@gmail.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- footer section ends here -->
+</body>
+
+</html>
